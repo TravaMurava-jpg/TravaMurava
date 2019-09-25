@@ -1,0 +1,18 @@
+a = 3.5;
+b = -0.7;
+i = 2;
+x = 0.8;
+s1 = 10^4 * (sin(i))^2;
+s2 = (0.32*x^3 + 4*x + b)/(cos(i*a));
+s3 = (0.32*x^3- b)^(1/6);
+s4 = abs(10^(-3) * tan(a*b));
+y = s1 - s2 * s3 + s4
+
+vector = [ a b i x y ]
+[B. INDEX] = sort(vector)
+u = b + vector
+if all (u > 0)
+    disp ("Все элементы больше нуля")
+else l = find(u>0)
+end
+
